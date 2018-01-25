@@ -90,23 +90,23 @@ let CONVARGO = (() => {
 
     var actors = [{
       'who': 'shipper',
-      'type': 'debit',
+      'type': 'debit :',
       'amount': price + deductibleOption
     }, {
       'who': 'trucker',
-      'type': 'credit',
+      'type': 'credit :',
       'amount': price - commission.value
     }, {
       'who': 'insurance',
-      'type': 'credit',
+      'type': 'credit :',
       'amount': commission.insurance
     }, {
       'who': 'treasury',
-      'type': 'credit',
+      'type': 'credit :',
       'amount': commission.treasury
     }, {
       'who': 'convargo',
-      'type': 'credit',
+      'type': 'credit :',
       'amount': commission.convargo + deductibleOption
     }];
 

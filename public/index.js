@@ -35,3 +35,7 @@
     return;
   });
 })();
+
+function showDiv() {
+   document.getElementById('resultDiv').style.display = "block";
+}

@@ -2,21 +2,43 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
+    <link rel='stylesheet' href='style.css'/>
   </head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+    <div class="box" id="trucker">
+      <h2 class = "text_color">Trucker Info</h2>
+      <div class="input_case">
+        Trucker name: <input class="name" type="text"/>
+      </div>
+      <div class="input_case">
+      Price by km : <input  class="price-by-km" type="number"/>
+      </div>
+      <div class="input_case">
+      Price by m3 : <input  class="price-by-cubic" type="number"/>
     </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+
+    
+    <div class="box" id="shipper">
+      <h2 class = "text_color">Shipper Info</h2>
+      <div class="input_case">
+        Shipper name : <input class="name" type="text"/>
+      </div>
+      <div class="input_case">
+        Distance in km : <input class="distance" type="number"/>
+      </div>
+      <div class="input_case">
+        Volume in m3 : <input class="volume" type="number"/>
+      </div>
+      <div class="input_case">
+        Deductible option : <input class="option" type="checkbox" placeholder="Deductible option"/>
+      </div>
+    </div>
+
+    <button class="button button1" id="compute" onclick="showDiv()">Compute</button>
+
+    <h2 id="resultDiv" class="result" style="top:4vh; font-size:23px;display:none;">Results</h2>
+    <div class="result" id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
   </body>
